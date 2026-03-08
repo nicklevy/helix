@@ -1,4 +1,11 @@
 import './animation.js';
+import { initTaxDeadlines } from './tax-deadlines.js';
+import { initXeroTips } from './xero-tips.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  initTaxDeadlines();
+  initXeroTips();
+});
 
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const navLinks = document.getElementById('nav-links');

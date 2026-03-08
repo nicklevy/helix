@@ -29,6 +29,7 @@
                 <li><a href="/sole-traders.html">Sole Traders</a></li>
                 <li><a href="/limited-companies.html">Limited Companies</a></li>
                 <li><a href="/start-ups.html">Start Ups</a></li>
+                <li><a href="/accountancy.html">Accountancy</a></li>
                 <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
                 <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
                 <li><a href="/why-xero.html">Why Xero</a></li>
@@ -56,65 +57,212 @@
       <div class="container" style="max-width: 1000px;">
         
         <!-- Tax Calendars Section -->
-        <div style="margin-bottom: 5rem;">
-          <h2 style="font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem;">Upcoming HMRC Tax Deadlines</h2>
-          <p class="text-muted" style="margin-bottom: 2rem;">Never miss a filing date. Keep track of the major upcoming deadlines for sole traders and limited companies.</p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+            <div style="max-width: 600px;">
+              <h2 style="font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem;">Upcoming HMRC Tax Deadlines</h2>
+              <p class="text-muted" style="margin-bottom: 0;">Never miss a filing date. Keep track of the major upcoming deadlines for sole traders and limited companies.</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; min-width: 150px;">
+              <label for="tax-year-select" style="font-size: 0.875rem; font-weight: 600; color: var(--text-muted);">Select Tax Year</label>
+              <select id="tax-year-select" style="padding: 0.75rem; border-radius: var(--radius-md); border: 1px solid #e2e8f0; font-family: inherit; font-size: 1rem; cursor: pointer; background-color: white; box-shadow: var(--shadow-sm);">
+                <option value="2026">2026/27</option>
+                <option value="2027">2027/28</option>
+                <option value="2028">2028/29</option>
+              </select>
+            </div>
+          </div>
+          <div id="deadlines-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div style="padding: 1.5rem; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
               <h4 style="font-weight: 700; color: #b45309; margin-bottom: 0.5rem;">31 January</h4>
-              <p style="margin: 0; font-size: 1rem;">Online Self Assessment tax return deadline and balancing payment due.</p>
+              <p style="margin: 0; font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Self Assessment Deadline</p>
+              <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">Online Self Assessment tax return deadline and balancing payment due for 2024/25.</p>
             </div>
             <div style="padding: 1.5rem; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
               <h4 style="font-weight: 700; color: #15803d; margin-bottom: 0.5rem;">05 April</h4>
-              <p style="margin: 0; font-size: 1rem;">End of the tax year. Ensure all income and expenses for the year are recorded.</p>
+              <p style="margin: 0; font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">End of Tax Year</p>
+              <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">The 2025/26 tax year ends. Ensure all income and expenses are recorded.</p>
             </div>
             <div style="padding: 1.5rem; background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
               <h4 style="font-weight: 700; color: #1d4ed8; margin-bottom: 0.5rem;">31 July</h4>
-              <p style="margin: 0; font-size: 1rem;">Second Payment on Account for Self Assessment due to HMRC.</p>
+              <p style="margin: 0; font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Payment on Account</p>
+              <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">Second Payment on Account for Self Assessment (2025/26) due to HMRC.</p>
             </div>
             <div style="padding: 1.5rem; background: #f8fafc; border-left: 4px solid #64748b; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
               <h4 style="font-weight: 700; color: #334155; margin-bottom: 0.5rem;">Corporation Tax</h4>
-              <p style="margin: 0; font-size: 1rem;">Due 9 months and 1 day after your company's accounting period ends.</p>
+              <p style="margin: 0; font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem;">Company Deadline</p>
+              <p style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">Due 9 months and 1 day after your company's accounting period ends.</p>
             </div>
-          </div>
         </div>
 
-        <!-- Xero Tips Section -->
-        <div style="margin-bottom: 5rem;">
-          <h2 style="font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem;">Xero Tips & How-To Guides</h2>
-          <p class="text-muted" style="margin-bottom: 2rem;">Short, actionable guides carefully crafted by our Xero Certified Advisors to help you master your accounting software.</p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Tip 1 -->
-            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+        <div style="margin-bottom: 5rem; margin-top: 8rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem;">Featured Xero Guides</h2>
+          <p class="text-muted" style="margin-bottom: 2rem;">Deep-dive into our most popular resources for Xero success.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6" style="margin-bottom: 4rem;">
+            <!-- Guide 1 -->
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); background: var(--white); display: flex; flex-direction: column;">
               <div style="height: 150px; background: var(--brand-light); display: flex; align-items: center; justify-content: center; color: var(--brand-color);">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 22H6v-4c0-5.5 8-5.5 8-11A3 3 0 1 0 8 7v2"></path><line x1="6" y1="13" x2="16" y2="13"></line></svg>
+                <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="20" y="25" width="60" height="50" rx="4" stroke="currentColor" stroke-width="3" opacity="0.3"/>
+                  <path d="M25 40H75M25 50H55M25 60H45" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+                  <circle cx="65" cy="55" r="15" fill="var(--white)" stroke="currentColor" stroke-width="3"/>
+                  <path d="M60 55L64 59L72 51" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 35C15 35 15 65 20 65" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+                </svg>
               </div>
-              <div style="padding: 1.5rem;">
+              <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
                 <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">How to Reconcile Your First Transaction</h3>
-                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">A step-by-step guide to matching your bank feed lines to your recorded invoices and bills flawlessly.</p>
-                <a href="#" style="font-weight: 500; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">A step-by-step guide to matching your bank feed lines to your recorded invoices and bills flawlessly.</p>
+                <a href="/reconcile-guide.html" style="font-weight: 600; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+              </div>
+            </div>
+            <!-- Guide 2 -->
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); background: var(--white); display: flex; flex-direction: column;">
+              <div style="height: 150px; background: #fff5f5; display: flex; align-items: center; justify-content: center; color: #e53e3e;">
+                <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 20H60L75 35V80H30V20Z" fill="var(--white)" stroke="currentColor" stroke-width="3"/>
+                  <path d="M60 20V35H75" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="52.5" cy="55" r="12" stroke="currentColor" stroke-width="2" stroke-dasharray="2 2"/>
+                  <path d="M47 55L51 59L59 51" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="38" y="70" width="30" height="4" rx="2" fill="currentColor" opacity="0.2"/>
+                  <path d="M15 45L25 50L15 55L20 50L15 45Z" fill="currentColor" opacity="0.4"/>
+                </svg>
+              </div>
+              <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Setting up Branded Invoices</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">Make your business look incredibly professional by customizing your Xero invoice templates with your logo.</p>
+                <a href="/branded-invoices-guide.html" style="font-weight: 600; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+              </div>
+            </div>
+            <!-- Guide 3 -->
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition); background: var(--white); display: flex; flex-direction: column;">
+              <div style="height: 150px; background: #f0f7ff; display: flex; align-items: center; justify-content: center; color: #3182ce;">
+                <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="35" y="15" width="30" height="60" rx="6" stroke="currentColor" stroke-width="3"/>
+                  <path d="M45 22H55" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                  <circle cx="50" cy="65" r="3" fill="currentColor" opacity="0.5"/>
+                  <path d="M70 40C75 40 80 45 80 50V75H20V50C20 45 25 40 30 40" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3" opacity="0.4"/>
+                  <path d="M50 40V25M40 35L50 25L60 35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+                </svg>
+              </div>
+              <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Managing Expenses on the Go</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem; flex-grow: 1;">Learn how to use the Xero mobile app to photograph receipts and claim your business expenses instantly.</p>
+                <a href="/expenses-guide.html" style="font-weight: 600; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="section-heading">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 10C30 10 10 30 10 50C10 70 30 90 50 90C70 90 90 70 90 50C90 30 70 10 50 10ZM50 80C33.4315 80 20 66.5685 20 50C20 33.4315 33.4314 20 50 20C66.5685 20 80 33.4315 80 50C80 66.5685 66.5685 80 50 80Z" fill="currentColor" opacity="0.1"/>
+              <path d="M50 20C33.4315 20 20 33.4315 20 50C20 66.5685 33.4315 80 50 80M50 20C66.5685 20 80 33.4315 80 50C80 66.5685 66.5685 80 50 80" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <path d="M35 35C40 30 60 30 65 35C70 40 70 60 65 65C60 70 40 70 35 65C30 60 30 40 35 35Z" stroke="currentColor" stroke-width="3" stroke-dasharray="2 4"/>
+              <path d="M50 30V70M30 50H70" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+            </svg>
+            Expert Xero Tips
+          </h2>
+          <p class="text-muted" style="margin-bottom: 2rem;">Master your accounting software with these actionable tips from our Xero Certified Advisors.</p>
+          
+          <div class="accordion">
+            <!-- Tip 1 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>1. Save time with Bank Rules</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Automate recurring transactions by setting up bank rules. This can save hours of manual reconciliation by automatically suggesting the correct account and contact for frequent spend or receive items. <a href="/reconcile-guide.html" style="font-weight: 600; color: var(--brand-color);">Read Full Reconciliation Guide &rarr;</a></p>
               </div>
             </div>
             <!-- Tip 2 -->
-            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
-              <div style="height: 150px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; color: #475569;">
-                <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              </div>
-              <div style="padding: 1.5rem;">
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Setting up Branded Invoices</h3>
-                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">Make your business look incredibly professional by customizing your Xero invoice templates with your logo.</p>
-                <a href="#" style="font-weight: 500; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>2. Use the Xero Me mobile app</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Download the Xero Me app to submit expense claims on the go and view your payslips instantly. It's the fastest way to stay updated on your personal business finances. <a href="/expenses-guide.html" style="font-weight: 600; color: var(--brand-color);">Read Mobile Expenses Guide &rarr;</a></p>
               </div>
             </div>
             <!-- Tip 3 -->
-            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
-              <div style="height: 150px; background: #e0e7ff; display: flex; align-items: center; justify-content: center; color: #4f46e5;">
-                <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>3. Automate data entry with Hubdoc</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Hubdoc extracts key information from your bills and receipts and pushes it directly into Xero. No more manual typing or lost receipts—everything is stored digitally and matched automatically.</p>
               </div>
-              <div style="padding: 1.5rem;">
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Managing Expenses on the Go</h3>
-                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">Learn how to use the Xero mobile app to photograph receipts and claim your business expenses instantly.</p>
-                <a href="#" style="font-weight: 500; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+            </div>
+            <!-- Tip 4 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>4. Master keyboard shortcuts</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Navigate faster by pressing "/" to search anywhere, "I" for a new invoice, or "B" for a new bill. These small shortcuts add up to significant time savings over the week.</p>
+              </div>
+            </div>
+            <!-- Tip 5 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>5. Professional Branded Invoices</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Customize your invoice templates in Settings to include your logo and brand colors. A professional-looking invoice builds trust and can even help you get paid faster. <a href="/branded-invoices-guide.html" style="font-weight: 600; color: var(--brand-color);">Read Invoice Branding Guide &rarr;</a></p>
+              </div>
+            </div>
+            <!-- Tip 6 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>6. Set up Recurring Invoices</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>For retainers or subscription-based services, use the "Repeating" tab under Invoices. Xero will automatically generate and even send the invoice on your behalf.</p>
+              </div>
+            </div>
+            <!-- Tip 7 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>7. Fixing errors with Find & Recode</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Made a mistake on dozens of entries? Advisors use "Find and Recode" to fix bulk categorization errors in seconds rather than editing each transaction individually.</p>
+              </div>
+            </div>
+            <!-- Tip 8 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>8. Track job profitability with Projects</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Use Xero Projects to track time and expenses against specific jobs. This gives you real-time visibility into whether a project is actually making you money.</p>
+              </div>
+            </div>
+            <!-- Tip 9 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>9. Enable Online Payments</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Connect Stripe or GoCardless to your invoices. Providing a "Pay Now" button on the digital invoice can help you get paid up to twice as fast.</p>
+              </div>
+            </div>
+            <!-- Tip 10 -->
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>10. Plan with Cash Flow Forecasting</span>
+                <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="accordion-content">
+                <p>Use the "Short-term cash flow" tool in the Business menu to see projected bank balances based on your upcoming bills and invoices. Essential for forward planning.</p>
               </div>
             </div>
           </div>
@@ -145,7 +293,17 @@
         <div class="grid grid-cols-1 md:grid-cols-3 footer-grid">
           <div class="footer-brand">
             <h3>Helix Business Services</h3>
-            <p>Based in Radlett, Hertfordshire. We help take the stress out of running your business by assisting with all your bookkeeping, accounting and HR requirements.</p>
+            <p>Based in Radlett, Hertfordshire, we are <strong>Xero experts</strong> helping take the stress out of running your business. We assist with all your <strong>Xero bookkeeping</strong>, accounting, and HR requirements.</p>
+                        <div style="display: flex; gap: 1.5rem; margin-top: 1.25rem; align-items: center;">
+              <!-- Xero Certified Advisor Logo -->
+              <div style="height: 48px; padding: 4px; background: white; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="https://i0.wp.com/helixbusinessservices.co.uk/wp-content/uploads/2021/01/xero-certified-advisor-logo-hires-RGB.png" alt="Xero Certified Advisor" style="height: 100%; width: auto; display: block;" />
+              </div>
+              <!-- ICB Member Logo -->
+              <div style="height: 48px; padding: 4px; background: white; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <img src="https://helixbusinessservices.co.uk/wp-content/uploads/2016/12/icb-logo-e1481891613465.png" alt="ICB Logo" style="height: 100%; width: auto; display: block;" />
+              </div>
+            </div>
           </div>
           <div class="footer-links">
             <h4>Quick Links</h4>
@@ -163,6 +321,7 @@
               <li><a href="/sole-traders.html">Sole Traders</a></li>
               <li><a href="/limited-companies.html">Limited Companies</a></li>
               <li><a href="/start-ups.html">Start Ups</a></li>
+              <li><a href="/accountancy.html">Accountancy</a></li>
               <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
               <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
               <li><a href="/why-xero.html">Why Xero</a></li>
