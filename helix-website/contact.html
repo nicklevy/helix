@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/helix_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Helix Business Services for a free consultation on your bookkeeping, accounting, or HR needs." />
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/main.js"></script>
+    <title>Contact Us - Helix Business Services</title>
+    <style>
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      .form-label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: var(--text-main);
+      }
+      .form-control {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #cbd5e1;
+        border-radius: var(--radius-md);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: var(--transition);
+      }
+      .form-control:focus {
+        outline: none;
+        border-color: var(--brand-color);
+        box-shadow: 0 0 0 3px var(--brand-light);
+      }
+      textarea.form-control {
+        resize: vertical;
+        min-height: 120px;
+      }
+      .contact-info {
+        background: var(--brand-color);
+        color: var(--white);
+        padding: 3rem;
+        border-radius: var(--radius-lg);
+        height: 100%;
+      }
+      .contact-info h2 {
+        color: var(--white);
+        margin-bottom: 2rem;
+      }
+      .contact-info p {
+        color: var(--brand-light);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav">
+        <a href="/" class="logo">
+          <img src="/assets/helix_logo.png" alt="Helix Business Services" />
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+              <a href="/index.html#services">Services ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="/sole-traders.html">Sole Traders</a></li>
+                <li><a href="/limited-companies.html">Limited Companies</a></li>
+                <li><a href="/start-ups.html">Start Ups</a></li>
+                <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
+                <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
+                <li><a href="/why-xero.html">Why Xero</a></li>
+                <li><a href="/hr-services.html">HR Services</a></li>
+              </ul>
+            </li>
+            <li><a href="/resource-hub.html">Resource Hub</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html" class="btn btn-outline" style="border: none;">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section" style="padding-top: 10rem; background: var(--bg-color);">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" style="background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden;">
+          
+          <div style="padding: 3rem;">
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Get in Touch</h1>
+            <p class="text-muted" style="margin-bottom: 2.5rem;">Fill out the form below to request your free consultation. A member of our team will get back to you shortly.</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+              <input type="hidden" name="access_key" value="453544d5-e996-427d-a341-1649344847fa">
+              <input type="hidden" name="subject" value="New Contact Inquiry - Helix Business Services">
+              <input type="hidden" name="redirect" value="https://helixbusinessservices.co.uk/success.html">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="service" class="form-label">Service Required</label>
+                <select id="service" name="service" class="form-control">
+                  <option value="bookkeeping">Bookkeeping Services</option>
+                  <option value="accountancy">Accountancy & VAT</option>
+                  <option value="hr">HR Services</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" placeholder="How can we help your business?"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%; border: none; padding: 1rem; font-size: 1.125rem;">Send Message</button>
+            </form>
+          </div>
+          
+          <div class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p style="margin-bottom: 2rem;">We are based in Radlett, Hertfordshire, and work with businesses across London and the UK.</p>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: var(--white); margin-bottom: 0.5rem; font-size: 1rem;">Email Us</h4>
+              <a href="mailto:info@helixbusinessservices.co.uk" style="color: var(--white); text-decoration: underline;">info@helixbusinessservices.co.uk</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-3 footer-grid">
+          <div class="footer-brand">
+            <h3>Helix Business Services</h3>
+            <p>Based in Radlett, Hertfordshire. We help take the stress out of running your business by assisting with all your bookkeeping, accounting and HR requirements.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/resource-hub.html">Resource Hub</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/sole-traders.html">Sole Traders</a></li>
+              <li><a href="/limited-companies.html">Limited Companies</a></li>
+              <li><a href="/start-ups.html">Start Ups</a></li>
+              <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
+              <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
+              <li><a href="/why-xero.html">Why Xero</a></li>
+              <li><a href="/hr-services.html">HR Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Helix Business Services. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

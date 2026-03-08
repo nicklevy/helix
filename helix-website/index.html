@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/assets/helix_logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Helix Business Services - Expert Xero Bookkeeping and HR Services for small and medium businesses." />
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Local Styles & Scripts -->
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <script type="module" src="/src/js/main.js"></script>
+  <title>Helix Business Services - Your Xero Bookkeeping Specialists</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a href="/" class="logo">
+        <img src="/assets/helix_logo.png" alt="Helix Business Services" />
+      </a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#services">Services ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="/sole-traders.html">Sole Traders</a></li>
+              <li><a href="/limited-companies.html">Limited Companies</a></li>
+              <li><a href="/start-ups.html">Start Ups</a></li>
+              <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
+              <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
+              <li><a href="/why-xero.html">Why Xero</a></li>
+              <li><a href="/hr-services.html">HR Services</a></li>
+            </ul>
+          </li>
+          <li><a href="/resource-hub.html">Resource Hub</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/contact.html" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <h1><span class="">Your Xero Bookkeeping Specialists</span></h1>
+        <p>Helix Business Services helps to take the stress out of running your business, by assisting with all your
+          bookkeeping, accounting, and HR requirements.</p>
+        <div class="flex justify-center gap-4">
+          <a href="/contact.html" class="btn btn-primary">Request Free Consultation</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+
+        <div class="hero-badges">
+          <img
+            src="https://i0.wp.com/helixbusinessservices.co.uk/wp-content/uploads/2021/01/xero-certified-advisor-logo-hires-RGB.png"
+            alt="Xero Certified Advisor" />
+          <img src="https://helixbusinessservices.co.uk/wp-content/uploads/2016/12/icb-logo-e1481891613465.png"
+            alt="ICB Logo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frustration Section -->
+  <section class="section" style="background-color: var(--brand-dark); color: var(--white); text-align: center;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="color: var(--white); margin-bottom: 1.5rem; font-size: 2.5rem;">Tired of spending your Sundays on VAT
+        returns?</h2>
+      <p style="font-size: 1.25rem; margin-bottom: 2rem; color: var(--brand-light);">We know the feeling. Running a
+        business is hard enough without getting bogged down in endless financial admin, compliance headaches, and
+        confusing spreadsheets. Let us take the weight off your shoulders.</p>
+      <a href="/contact.html" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">Reclaim
+        Your Time</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="text-center" style="max-width: 800px; margin: 0 auto 4rem;">
+        <h2>How we can help your business</h2>
+        <p class="text-muted">Our service is professional, specialised, and comprehensive. We provide the right
+          solutions to successfully partner with your firm.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Bookkeeping -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Inline SVG for Book -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3>Bookkeeping</h3>
+          <p>From day-to-day purchase & sales ledgers to business management reports. We specialize in Xero bookkeeping
+            to ensure accurate, up-to-date, compliant accounts.</p>
+          <a href="/xero-bookkeeping.html" style="margin-top: 1.5rem; font-weight: 500;">Learn more &rarr;</a>
+        </div>
+
+        <!-- Accountancy -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Inline SVG for Calculator -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+              <line x1="16" y1="14" x2="16" y2="18"></line>
+              <path d="M16 10h.01"></path>
+              <path d="M12 10h.01"></path>
+              <path d="M8 10h.01"></path>
+              <path d="M12 14h.01"></path>
+              <path d="M8 14h.01"></path>
+              <path d="M12 18h.01"></path>
+              <path d="M8 18h.01"></path>
+            </svg>
+          </div>
+          <h3>Accountancy & VAT</h3>
+          <p>We handle VAT returns, supplier payments, and full accounting software advice and support, saving you time
+            and money.</p>
+          <a href="/contact.html" style="margin-top: 1.5rem; font-weight: 500;">Learn more &rarr;</a>
+        </div>
+
+        <!-- HR Services -->
+        <div class="service-card">
+          <div class="service-icon">
+            <!-- Inline SVG for Users -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>HR Services</h3>
+          <p>Comprehensive HR administration and support, as well as dedicated HR advice and guidance for your growing
+            team.</p>
+          <a href="/hr-services.html" style="margin-top: 1.5rem; font-weight: 500;">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="section pricing-section">
+    <div class="container">
+      <div class="pricing-header">
+        <h2>Bookkeeping plans to suit your business</h2>
+        <p class="text-muted">We offer a broad range of fixed-price comprehensive bookkeeping plans tailored to your
+          unique needs.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" style="align-items: center;">
+        <!-- Essential Tier -->
+        <div class="pricing-card">
+          <h3 class="pricing-title">Essential</h3>
+
+          <p class="text-muted" style="margin: 1rem 0 2rem;">For sole traders and small startups.</p>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Bank Reconciliation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Posting purchase invoices</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Xero Software Support</li>
+          </ul>
+          <a href="/contact.html" class="btn btn-outline" style="width: 100%;">Get Started</a>
+        </div>
+
+        <!-- Professional Tier -->
+        <div class="pricing-card popular">
+          <div class="pricing-badge">Recommended</div>
+          <h3 class="pricing-title">Professional</h3>
+
+          <p class="text-muted" style="margin: 1rem 0 2rem;">For growing limited companies.</p>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> All Essential features</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> VAT Returns</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Cash Flow Forecasting</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Raising & sending invoices</li>
+          </ul>
+          <a href="/contact.html" class="btn btn-primary" style="width: 100%;">Get Started</a>
+        </div>
+
+        <!-- Elite Tier -->
+        <div class="pricing-card">
+          <h3 class="pricing-title">Elite</h3>
+
+          <p class="text-muted" style="margin: 1rem 0 2rem;">For established businesses needing full support.</p>
+          <ul class="pricing-features">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> All Professional features</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Supplier payments & relations</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Business management reports</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg> Priority support</li>
+          </ul>
+          <a href="/contact.html" class="btn btn-outline" style="width: 100%;">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 footer-grid">
+        <div class="footer-brand">
+          <h3>Helix Business Services</h3>
+          <p>Based in Radlett, Hertfordshire. We help take the stress out of running your business by assisting with all
+            your bookkeeping, accounting and HR requirements.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/resource-hub.html">Resource Hub</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/sole-traders.html">Sole Traders</a></li>
+            <li><a href="/limited-companies.html">Limited Companies</a></li>
+            <li><a href="/start-ups.html">Start Ups</a></li>
+            <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
+            <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
+            <li><a href="/why-xero.html">Why Xero</a></li>
+            <li><a href="/hr-services.html">HR Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;
+          <script>document.write(new Date().getFullYear())</script> Helix Business Services. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

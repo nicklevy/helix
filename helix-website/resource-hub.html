@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Helix Business Services Resource Hub - Access tax calendars, Xero bookkeeping tips, and our free small business year-end checklist." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script type="module" src="/src/js/main.js"></script>
+    <title>Resource Hub - Helix Business Services</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav">
+        <a href="/" class="logo">
+          <img src="/assets/helix_logo.png" alt="Helix Business Services" />
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+              <a href="/index.html#services">Services ▾</a>
+              <ul class="dropdown-menu">
+                <li><a href="/sole-traders.html">Sole Traders</a></li>
+                <li><a href="/limited-companies.html">Limited Companies</a></li>
+                <li><a href="/start-ups.html">Start Ups</a></li>
+                <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
+                <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
+                <li><a href="/why-xero.html">Why Xero</a></li>
+                <li><a href="/hr-services.html">HR Services</a></li>
+              </ul>
+            </li>
+            <li><a href="/resource-hub.html" style="color: var(--brand-color)">Resource Hub</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html" class="btn btn-primary">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 10rem; background: var(--bg-color); text-align: center;">
+      <div class="container" style="max-width: 800px;">
+        <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">The Resource Hub</h1>
+        <p class="text-muted" style="font-size: 1.25rem;">Your library of practical guides, important deadlines, and valuable assets designed to empower UK small business owners.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section" style="background: var(--white);">
+      <div class="container" style="max-width: 1000px;">
+        
+        <!-- Tax Calendars Section -->
+        <div style="margin-bottom: 5rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem;">Upcoming HMRC Tax Deadlines</h2>
+          <p class="text-muted" style="margin-bottom: 2rem;">Never miss a filing date. Keep track of the major upcoming deadlines for sole traders and limited companies.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div style="padding: 1.5rem; background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+              <h4 style="font-weight: 700; color: #b45309; margin-bottom: 0.5rem;">31 January</h4>
+              <p style="margin: 0; font-size: 1rem;">Online Self Assessment tax return deadline and balancing payment due.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+              <h4 style="font-weight: 700; color: #15803d; margin-bottom: 0.5rem;">05 April</h4>
+              <p style="margin: 0; font-size: 1rem;">End of the tax year. Ensure all income and expenses for the year are recorded.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+              <h4 style="font-weight: 700; color: #1d4ed8; margin-bottom: 0.5rem;">31 July</h4>
+              <p style="margin: 0; font-size: 1rem;">Second Payment on Account for Self Assessment due to HMRC.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8fafc; border-left: 4px solid #64748b; border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+              <h4 style="font-weight: 700; color: #334155; margin-bottom: 0.5rem;">Corporation Tax</h4>
+              <p style="margin: 0; font-size: 1rem;">Due 9 months and 1 day after your company's accounting period ends.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Xero Tips Section -->
+        <div style="margin-bottom: 5rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 0.5rem;">Xero Tips & How-To Guides</h2>
+          <p class="text-muted" style="margin-bottom: 2rem;">Short, actionable guides carefully crafted by our Xero Certified Advisors to help you master your accounting software.</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Tip 1 -->
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+              <div style="height: 150px; background: var(--brand-light); display: flex; align-items: center; justify-content: center; color: var(--brand-color);">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 22H6v-4c0-5.5 8-5.5 8-11A3 3 0 1 0 8 7v2"></path><line x1="6" y1="13" x2="16" y2="13"></line></svg>
+              </div>
+              <div style="padding: 1.5rem;">
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">How to Reconcile Your First Transaction</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">A step-by-step guide to matching your bank feed lines to your recorded invoices and bills flawlessly.</p>
+                <a href="#" style="font-weight: 500; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+              </div>
+            </div>
+            <!-- Tip 2 -->
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+              <div style="height: 150px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; color: #475569;">
+                <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <div style="padding: 1.5rem;">
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Setting up Branded Invoices</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">Make your business look incredibly professional by customizing your Xero invoice templates with your logo.</p>
+                <a href="#" style="font-weight: 500; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+              </div>
+            </div>
+            <!-- Tip 3 -->
+            <div style="border: 1px solid #e2e8f0; border-radius: var(--radius-md); overflow: hidden; transition: var(--transition);">
+              <div style="height: 150px; background: #e0e7ff; display: flex; align-items: center; justify-content: center; color: #4f46e5;">
+                <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div style="padding: 1.5rem;">
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Managing Expenses on the Go</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem;">Learn how to use the Xero mobile app to photograph receipts and claim your business expenses instantly.</p>
+                <a href="#" style="font-weight: 500; font-size: 0.95rem; color: var(--brand-color);">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lead Magnet Section -->
+        <div style="background: var(--brand-dark); border-radius: var(--radius-lg); padding: 4rem 2rem; color: var(--white); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: var(--shadow-lg);">
+          <svg width="64" height="64" fill="none" stroke="var(--brand-light)" stroke-width="1.5" style="margin-bottom: 1.5rem;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+          <h2 style="color: var(--white); font-size: 2.5rem; margin-bottom: 1rem;">Download Your Free Year-End Checklist</h2>
+          <p style="font-size: 1.125rem; color: var(--brand-light); max-width: 600px; margin-bottom: 2.5rem;">Preparing for your financial year-end doesn't have to cause panic. Download our comprehensive PDF checklist for UK small businesses to ensure your books are perfectly in order.</p>
+          
+          <form action="https://api.web3forms.com/submit" method="POST" style="width: 100%; max-width: 500px; display: flex; gap: 0.5rem; margin: 0 auto;">
+            <input type="hidden" name="access_key" value="453544d5-e996-427d-a341-1649344847fa">
+            <input type="hidden" name="subject" value="Year-End Checklist Download Request">
+            <input type="hidden" name="redirect" value="https://helixbusinessservices.co.uk/success.html">
+            <input type="email" name="email" required placeholder="Enter your email address" style="flex-grow: 1; padding: 1rem; border-radius: var(--radius-md); border: none; font-size: 1rem; font-family: inherit;">
+            <button type="submit" class="btn btn-primary" style="background: var(--brand-color); white-space: nowrap;">Get Checklist</button>
+          </form>
+          <p style="font-size: 0.85rem; color: var(--brand-light); opacity: 0.8; margin-top: 1rem;">We'll email the PDF directly to your inbox. We respect your privacy.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-3 footer-grid">
+          <div class="footer-brand">
+            <h3>Helix Business Services</h3>
+            <p>Based in Radlett, Hertfordshire. We help take the stress out of running your business by assisting with all your bookkeeping, accounting and HR requirements.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/resource-hub.html">Resource Hub</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="/sole-traders.html">Sole Traders</a></li>
+              <li><a href="/limited-companies.html">Limited Companies</a></li>
+              <li><a href="/start-ups.html">Start Ups</a></li>
+              <li><a href="/xero-bookkeeping.html">Xero Bookkeeping</a></li>
+              <li><a href="/xero-maintenance.html">Xero Maintenance</a></li>
+              <li><a href="/why-xero.html">Why Xero</a></li>
+              <li><a href="/hr-services.html">HR Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Helix Business Services. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
