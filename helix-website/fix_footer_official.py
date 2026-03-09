@@ -1,15 +1,15 @@
 import os
 import re
 
-# The new footer logos div using local assets
+# The new footer logos div using local assets in src/assets
 new_footer_logos = """            <div style="display: flex; gap: 1.5rem; margin-top: 1.25rem; align-items: center;">
               <!-- Xero Certified Advisor Logo -->
               <div style="height: 48px; padding: 4px; background: white; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                <img src="/assets/xero-logo.png" alt="Xero Certified Advisor" style="height: 100%; width: auto; display: block;" />
+                <img src="/src/assets/xero-logo.png" alt="Xero Certified Advisor" style="height: 100%; width: auto; display: block;" />
               </div>
               <!-- ICB Member Logo -->
               <div style="height: 48px; padding: 4px; background: white; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                <img src="/assets/icb-logo.png" alt="ICB Logo" style="height: 100%; width: auto; display: block;" />
+                <img src="/src/assets/icb-logo.png" alt="ICB Logo" style="height: 100%; width: auto; display: block;" />
               </div>
             </div>"""
 
